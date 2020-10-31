@@ -1,10 +1,20 @@
 @extends('layouts.app')
 @section('title', 'Lista de Agendamentos')
 @section('content')
-<br><br>
-	<!-- <a href=""> -->
-		<!-- <img src="dist/img/logo-agendamento.png" width="276" height="112" alt=""> -->
-	<!-- </a> -->
+<br>
+<div class="row">
+  <div class="col-md-12">
+    @if(Session::has('mensagem'))
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{Session::get('mensagem')}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    @endif
+  </div>
+</div>
+<br>
 <div class="row">
   <div class="col-md-12">
     <div class="card border-dark shadow-lg">

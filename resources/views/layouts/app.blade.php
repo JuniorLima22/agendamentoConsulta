@@ -36,5 +36,6 @@
 </footer>
 {{Html::script('dist/js/jquery-3.5.1.min.js')}}
 {{Html::script('dist/js/bootstrap.min.js')}}
+{{Html::script('dist/js/function-custom.js')}}
 </body>
 </html>

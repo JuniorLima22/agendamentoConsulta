@@ -64,6 +64,7 @@ class AgendamentoController extends Controller
         $agendamento->observacao = $request->input('observacao');
 
         if ($agendamento->save()) {
+            Session::flash('mensagem', 'Agendamento da Consulta criado com sucesso!');
             return redirect('agendamento');
         }
     }
